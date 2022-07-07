@@ -1,6 +1,5 @@
 package com.udacity.graphql.exception;
 
-import graphql.ErrorClassification;
 import graphql.ErrorType;
 import graphql.GraphQLError;
 import graphql.language.SourceLocation;
@@ -22,7 +21,7 @@ public class DogNotFoundException extends RuntimeException implements GraphQLErr
     }
 
     @Override
-    public ErrorClassification getErrorType() {
+    public ErrorType getErrorType() {
         return ErrorType.DataFetchingException;
     }
 
